@@ -34,7 +34,7 @@ valid_keys = {"UTOPIA-79G9KDJFDZ", "UTOPIA-K7MZ3X9FJ2", "UTOPIA-F1LQ4E6MNB8", "F
 
 # Função para verificar atualizações
 def check_for_updates(current_version):
-    repo_url = "https://api.github.com/repos/seu_usuario/seu_repositorio/releases/latest"
+    repo_url = "https://api.github.com/repos/arthursiimoes/UtopiaFortniteBot/releases/latest"
     response = requests.get(repo_url)
     
     if response.status_code == 200:
@@ -43,7 +43,7 @@ def check_for_updates(current_version):
             messagebox.showinfo("Atualização Disponível", f"Uma nova versão {latest_version} está disponível. Por favor, atualize.")
             # Opcionalmente, você pode abrir o navegador para a página de lançamentos
             # import webbrowser
-            # webbrowser.open("https://github.com/seu_usuario/seu_repositorio/releases/latest")
+            # webbrowser.open("https://github.com/arthursiimoes/UtopiaFortniteBot/releases/latest")
 
 # Função para iniciar o bot
 def start_bot():
